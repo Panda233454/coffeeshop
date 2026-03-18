@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-slab-body {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li:hover {
+    background-color: #ac7e68;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h3 span i {
+    padding-right: 10px;
+}
+
+.main-color {
+    color: #ac7e68;
+}
+
+header {
+    background: url("../coffee_shop_images/home1.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head-content {
+    color: #ac7e68;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .head-content h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    background: #fffbf2;
+    padding: 50px;
+    align-items: stretch;
+    height: 100%;
+}
+
+.section-text {
+    margin-left: 20px;
+    width: 40%;
+}
+
+.section-text h2 {
+    margin-top: 30px;
+}
+
+.section-text p {
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.section-img {
+    flex: 0 0 700px;   
+    min-height: 500px;
+    
+    border: 5px solid #fff;       
+    border-radius: 4px;          
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    
+    overflow: hidden;            
+
+    background: url("../coffee_shop_images//home-image-1.jpg");
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-size: cover;     
+}
+
+#section2 {
+    background: url("../coffee_shop_images//home2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section2-content h2 {
+    color:#fff;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.section2-content button {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #fff;
+    width: 300px;
+    height: 100px;
+    background: #ac7e68;
+    border: 0;
+}
+
+.section2-content button:hover {
+    background: cornflowerblue;
+    color: #222;
+}
+
+#article {
+    background-color: #fffbf2;
+    height: 40vh;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.article-title h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top: 60px;
+}
+
+.article-detail {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 80%;
+    margin: 50px 0px;
+   
+    row-gap: 100px;
+}
+
+.article-detail p {
+    padding: 0px 100px;
+}
+.article-detail p:first-child {
+    font-style:italic;
+    padding-bottom: 30px;
+}
+
+.article-detail p:nth-child(2) {
+    font-style: bold;
+    padding-bottom: 10px;
+}
+
+#footer {
+    background-color: #222;
+    height: 10vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    
+     nav {
+        flex-direction: column;   
+        align-items: center;     
+        padding: 1rem 0.5rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;      
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+        padding: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    
+    header {
+        height: 60vh;
+    }
+
+    .head-content {
+        gap: 20px;  
+    }
+
+    header .head-content h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .head-content p {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    
+    #section1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section-text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-text p {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .section-img {
+        flex: none;
+        width: 100%;
+        min-height: 300px;
+        margin-top: 20px;
+    }
+
+   
+    #section2 {
+        height: 60vh;
+    }
+
+    .section2-content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .section2-content button {
+        width: 200px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    
+    #article {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .article-title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .article-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-detail div {
+        margin-bottom: 30px;
+    }
+
+    .article-detail p {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    
+    #footer {
+        height: 8vh;
+    }
+}

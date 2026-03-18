@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #fdf6f0;
+    color: #5a3d2b;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff8f2;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info-container h2 {
+    text-align: center;
+    color: #8b5e3c;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.contact-info-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-info-container a {
+    color: #ac7e68;
+    text-decoration: none;
+}
+
+.contact-info-container a:hover {
+    text-decoration: underline;
+}
+
+.contact-info-container ul {
+    padding-left: 20px;
+}
+
+.contact-info-container ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+   
+     nav {
+        flex-direction: column;   
+        align-items: center;     
+        padding: 1rem 0.5rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;      
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+        padding: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+   
+
+    #section {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .section-address {
+        grid-template-columns: 1fr;  
+        gap: 50px;
+    }
+
+    .address-info {
+        font-size: 1.2rem;            
+        line-height: 3;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .contact h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .contact form {
+        gap: 37px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact form button {
+        font-size: 1rem;
+    }
+
+   
+    #footer {
+        height: 8vh;
+    }
+}
